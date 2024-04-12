@@ -1,11 +1,11 @@
 import './App.css';
-import ProductCard from './components/ProductCard';
+import CardContainer from './components/CardContainer';
 
 function App() {
 
   return (
     <>
-      <ProductCard />
+      <CardContainer />
     </>
   )
 }
