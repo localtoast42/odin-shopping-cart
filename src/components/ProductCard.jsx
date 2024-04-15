@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const ProductCard = ({ item }) => {
 
     return (
@@ -11,5 +13,9 @@ const ProductCard = ({ item }) => {
       </div>
     );
 };
+
+ProductCard.PropTypes = {
+    item: PropTypes.object.isRequired,
+}
 
 export default ProductCard;
