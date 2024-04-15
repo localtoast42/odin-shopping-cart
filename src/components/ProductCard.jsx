@@ -15,7 +15,7 @@ const ProductCard = ({ item }) => {
     );
 };
 
-ProductCard.PropTypes = {
+ProductCard.propTypes = {
     item: PropTypes.object.isRequired,
 }
 
