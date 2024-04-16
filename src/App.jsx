@@ -1,7 +1,10 @@
 import './App.css';
+import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 function App() {
+
+  const [shoppingCart, setShoppingCart] = useState([]);
 
   return (
     <>
