@@ -1,5 +1,5 @@
 import './App.css';
-import CardContainer from './components/CardContainer';
+import { Outlet } from "react-router-dom";
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
           <h2>Shop</h2>
         </div>
       </nav>
-      <CardContainer />
+      <Outlet />
     </>
   )
 }
