@@ -14,7 +14,9 @@ function App() {
           <Link to="shop">Shop</Link>
         </div>
       </nav>
-      <Outlet />
+      <div className='content'>
+        <Outlet />
+      </div>
     </>
   )
 }
