@@ -6,9 +6,14 @@ const ProductCard = ({ item }) => {
     return (
         <div className="product-card">
             <img src={item.image} alt="" className="card-image"/>
-            <h3>{item.title}</h3>
-            <h4>{'$' + item.price.toFixed(2)}</h4>
-            <button>Add</button>
+            <h3 className="product-title">{item.title}</h3>
+            <div>
+                <h4 className="product-price">{'$' + item.price.toFixed(2)}</h4>
+                <div>
+                    <input type="number" className="qty-input"/>
+                    <button className="add-cart-btn">Add</button>
+                </div>
+            </div>
         </div>
     );
 };
