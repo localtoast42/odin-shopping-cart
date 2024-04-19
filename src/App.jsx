@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 function App() {
 
@@ -12,8 +12,8 @@ function App() {
         <div className='nav-items'>
           <div className='logo'></div>
           <div className='nav-links'>
-            <Link to="">Home</Link>
-            <Link to="shop">Shop</Link>
+            <NavLink to="">Home</NavLink>
+            <NavLink to="shop">Shop</NavLink>
           </div>
           <div className='cart'></div>
         </div>
