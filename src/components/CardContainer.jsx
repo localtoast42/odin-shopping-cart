@@ -7,7 +7,7 @@ const CardContainer = () => {
     const [itemList, setItemList] = useState([]);
 
     useEffect(() => {
-        fetch("https://fakestoreapi.com/products?limit=5", { mode: "cors" })
+        fetch("https://fakestoreapi.com/products?limit=20", { mode: "cors" })
             .then((response) => response.json())
             .then((response) => setItemList(response))
             .catch((error) => console.error(error));
