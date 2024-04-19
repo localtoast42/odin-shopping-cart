@@ -1,6 +1,6 @@
 .card-container {
-    max-width: 800px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 18px;
+    width: clamp(320px, 80vw, 1000px);
 }
