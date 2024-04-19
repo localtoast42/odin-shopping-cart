@@ -11,6 +11,8 @@
 .card-image {
     align-self: center;
     height: 150px;
+    width: 164px;
+    object-fit: contain;
     margin-bottom: 10px;
 }
 
