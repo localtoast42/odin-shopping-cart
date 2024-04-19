@@ -8,10 +8,14 @@ function App() {
 
   return (
     <>
-      <nav className='flex p-6 bg-sky-500'>
-        <div className='flex gap-2'>
-          <Link to="">Home</Link>
-          <Link to="shop">Shop</Link>
+      <nav className='navbar'>
+        <div className='nav-items'>
+          <div className='logo'></div>
+          <div className='nav-links'>
+            <Link to="">Home</Link>
+            <Link to="shop">Shop</Link>
+          </div>
+          <div className='cart'></div>
         </div>
       </nav>
       <div className='content'>
