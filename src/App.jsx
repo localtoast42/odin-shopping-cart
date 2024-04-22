@@ -8,6 +8,8 @@ function App() {
 
   const [shoppingCart, setShoppingCart] = useState([]);
 
+  console.log(shoppingCart);
+
   return (
     <>
       <nav className='navbar'>
@@ -24,7 +26,7 @@ function App() {
         </div>
       </nav>
       <div className='content'>
-        <Outlet />
+        <Outlet context={ [shoppingCart, setShoppingCart] } />
       </div>
     </>
   )
