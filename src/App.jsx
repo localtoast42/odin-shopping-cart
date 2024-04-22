@@ -1,4 +1,6 @@
 import './App.css';
+import Logo from './assets/tag.svg';
+import Cart from './assets/cart-outline.svg';
 import { useState } from "react";
 import { Outlet, NavLink } from "react-router-dom";
 
@@ -10,12 +12,15 @@ function App() {
     <>
       <nav className='navbar'>
         <div className='nav-items'>
-          <div className='logo'></div>
-          <div className='nav-links'>
+          <div className='nav-left'>
+            <img src={Logo} alt="" />
             <NavLink to="">Home</NavLink>
             <NavLink to="shop">Shop</NavLink>
           </div>
-          <div className='cart'></div>
+          <NavLink to="checkout" className={'cart'}>
+            <div>4</div>
+            <img src={Cart} alt="" />
+          </NavLink>
         </div>
       </nav>
       <div className='content'>
