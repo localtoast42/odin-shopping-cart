@@ -1,7 +1,10 @@
 import "./ProductCard.css";
+import { useState } from "react";
 import PropTypes from 'prop-types';
 
 const ProductCard = ({ item }) => {
+
+    const [quantity, setQuantity] = useState(0);
 
     return (
         <div className="product-card">
@@ -10,7 +13,11 @@ const ProductCard = ({ item }) => {
             <div>
                 <h4 className="product-price">{'$' + item.price.toFixed(2)}</h4>
                 <div>
-                    <input type="number" className="qty-input" min="0"/>
+                    <div className="qty-input">
+                        <button className="qty-btn">-</button>
+                        <div className="qty">{quantity}</div>
+                        <button className="qty-btn">+</button>
+                    </div>
                     <button className="add-cart-btn">Add to cart</button>
                 </div>
             </div>
