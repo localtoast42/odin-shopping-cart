@@ -10,8 +10,8 @@ const ProductCard = ({ item }) => {
             <div>
                 <h4 className="product-price">{'$' + item.price.toFixed(2)}</h4>
                 <div>
-                    <input type="number" className="qty-input"/>
-                    <button className="add-cart-btn">Add</button>
+                    <input type="number" className="qty-input" min="0"/>
+                    <button className="add-cart-btn">Add to cart</button>
                 </div>
             </div>
         </div>
