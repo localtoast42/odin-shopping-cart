@@ -18,7 +18,7 @@ function App() {
             <NavLink to="shop">Shop</NavLink>
           </div>
           <NavLink to="checkout" className={'cart'}>
-            <div>4</div>
+            <div>{shoppingCart.length}</div>
             <img src={Cart} alt="" />
           </NavLink>
         </div>
