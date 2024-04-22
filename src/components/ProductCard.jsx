@@ -21,11 +21,17 @@ const ProductCard = ({ item, shoppingCart, setShoppingCart }) => {
     }
 
     function handleAddToCart() {
-        const newCartEntry = {
-            id: item.id,
-            quantity: quantity,
+        const newShoppingCart = [...shoppingCart]
+        const result = shoppingCart.filter((entry) => entry.id === item.id)
+        if (result.length > 0) {
+            result.pop().quantity += quantity;
+        } else {
+            const newCartEntry = {
+                id: item.id,
+                quantity: quantity,
+            }
+            newShoppingCart.push(newCartEntry);
         }
-        const newShoppingCart = [...shoppingCart, newCartEntry];
 
         setShoppingCart(newShoppingCart);
         setQuantity(0);
