@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 const CheckoutItem = ({ title, price, image, quantity }) => {
     
     return (
-        <div>
-            <img src={image} alt="" />
+        <div className='checkout-item'>
+            <img src={image} alt="" className='checkout-image'/>
             <h3>{title}</h3>
             <h4>{'$' + price.toFixed(2)}</h4>
+            <h4>{quantity}</h4>
+            <h4>{'$' + (quantity * price.toFixed(2))}</h4>
         </div>
     );
 }
