@@ -37,7 +37,7 @@
 
 .qty-input {
     display: grid;
-    grid-template-columns: repeat(3, 25px);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .qty-btn {
