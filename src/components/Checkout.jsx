@@ -8,6 +8,13 @@ const Checkout = () => {
     return (
         <div className="checkout-container">
             <div className="checkout-list">
+                <div className="checkout-header">
+                    <div></div>
+                    <h2>Item</h2>
+                    <h2>Price</h2>
+                    <h2>Quantity</h2>
+                    <h2>Subtotal</h2>
+                </div>
                 {shoppingCart.map(item => <CheckoutItem
                     key={item.id}
                     title={item.title}
