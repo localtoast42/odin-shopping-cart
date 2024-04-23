@@ -28,6 +28,9 @@ const ProductCard = ({ item, shoppingCart, setShoppingCart }) => {
         } else {
             const newCartEntry = {
                 id: item.id,
+                title: item.title,
+                price: item.price,
+                image: item.image,
                 quantity: quantity,
             }
             newShoppingCart.push(newCartEntry);
