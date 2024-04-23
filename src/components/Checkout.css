@@ -1,0 +1,15 @@
+.checkout-container {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    width: clamp(320px, 80vw, 1000px);
+}
+
+.checkout-list {
+    background-color: white;
+}
+
+.checkout-header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}

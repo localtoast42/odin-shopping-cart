@@ -1,3 +1,4 @@
+import './Checkout.css';
 import { useOutletContext } from "react-router-dom";
 import CheckoutItem from "./CheckoutItem";
 
