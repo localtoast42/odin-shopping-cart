@@ -1,6 +1,7 @@
 import App from "./App";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
+import Checkout from "./components/Checkout";
 
 const routes = [
   {
@@ -9,6 +10,7 @@ const routes = [
     children: [
         { index: true, element: <Home /> },
         { path: "shop", element: <Shop /> },
+        { path: "checkout", element: <Checkout />},
     ],
   },
 ];
