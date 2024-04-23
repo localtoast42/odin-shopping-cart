@@ -1,0 +1,11 @@
+.checkout-item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    background-color: white;
+    padding: 12px;
+}
+
+.checkout-image {
+    height: 50px;
+}

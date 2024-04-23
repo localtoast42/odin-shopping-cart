@@ -1,3 +1,4 @@
+import './CheckoutItem.css';
 import PropTypes from 'prop-types';
 
 const CheckoutItem = ({ title, price, image, quantity }) => {
