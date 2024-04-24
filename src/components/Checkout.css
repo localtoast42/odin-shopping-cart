@@ -5,6 +5,8 @@
     width: clamp(320px, 80vw, 1000px);
     background-color: white;
     padding: 18px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px lightgray;
 }
 
 .checkout-header {
