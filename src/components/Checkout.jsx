@@ -6,6 +6,10 @@ const Checkout = () => {
 
     const [shoppingCart, setShoppingCart] = useOutletContext();
 
+    function handleSubmit() {
+        setShoppingCart([]);
+    }
+
     return (
         <div className="checkout-container">
             <div className="checkout-list">
@@ -36,7 +40,7 @@ const Checkout = () => {
                 <div></div>
                 <div></div>
                 <div></div>
-                <button className="order-submit-btn">Submit Order</button>
+                <button className="order-submit-btn" onClick={handleSubmit}>Submit Order</button>
             </div>
         </div>
     );
