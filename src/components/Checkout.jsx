@@ -36,7 +36,7 @@ const Checkout = () => {
                 <div></div>
                 <div></div>
                 <div></div>
-                <button>Submit Order</button>
+                <button className="order-submit-btn">Submit Order</button>
             </div>
         </div>
     );

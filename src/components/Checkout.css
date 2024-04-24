@@ -4,6 +4,7 @@
     flex-direction: column;
     width: clamp(320px, 80vw, 1000px);
     background-color: white;
+    padding: 18px;
 }
 
 .checkout-header {
@@ -19,4 +20,22 @@
 .checkout-submit {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+.order-submit-btn {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #6366f1;
+    padding: 6px 8px;
+}
+
+.order-submit-btn:hover {
+    background-color: #4338ca;
+}
+
+.order-submit-btn:active {
+    background-color: #3730a3;
 }
