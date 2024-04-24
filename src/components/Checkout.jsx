@@ -10,6 +10,16 @@ const Checkout = () => {
         setShoppingCart([]);
     }
 
+    function getOrderTotal() {
+        let orderTotal = 0;
+        
+        if (shoppingCart.length > 0) {
+            orderTotal = shoppingCart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+        }
+    
+        return "$" + orderTotal.toFixed(2);
+    }
+
     return (
         <div className="checkout-container">
             <div className="checkout-list">
@@ -33,7 +43,7 @@ const Checkout = () => {
                 <div></div>
                 <div></div>
                 <h3>Total</h3>
-                <h3>$100</h3>
+                <h3>{getOrderTotal()}</h3>
             </div>
             <div className="checkout-submit">
                 <div></div>
