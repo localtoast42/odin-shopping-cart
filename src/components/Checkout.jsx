@@ -24,8 +24,20 @@ const Checkout = () => {
                     quantity={item.quantity} />
                 )}
             </div>
-            <div className="checkout-total"></div>
-            <div></div>
+            <div className="checkout-total">
+                <div></div>
+                <div></div>
+                <div></div>
+                <h3>Total</h3>
+                <h3>$100</h3>
+            </div>
+            <div className="checkout-submit">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <button>Submit Order</button>
+            </div>
         </div>
     );
 }
